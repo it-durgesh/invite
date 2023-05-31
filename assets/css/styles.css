@@ -122,6 +122,14 @@ img {
   color: var(--first-color);
 }
 
+.change__theme-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: #e24a90
+}
+
 /*========== Variables light theme ==========*/
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
@@ -441,7 +449,7 @@ body.light-theme {
   display: grid;
   row-gap: 2.25rem; */
   justify-items: center;
-  right: -7.5rem;
+  right: -5%;
     margin-left: auto;
     bottom: 12rem;
     display: grid;
@@ -548,7 +556,7 @@ body.light-theme {
 }
 
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+  font-size: var(--small-font-size);
 }
 
 .about__description {

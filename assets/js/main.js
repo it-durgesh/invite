@@ -225,23 +225,47 @@ sr.reveal(`.about__img`, {
 //   distance: "30px",
 // });
 
-sr.reveal(`.footer, footer__container`, {
-  delay: 100,
-  scale: 0.9,
-  origin: "bottom",
-  distance: "30px",
-});
+// sr.reveal(`.footer, footer__container`, {
+//   delay: 100,
+//   scale: 0.9,
+//   origin: "bottom",
+//   distance: "30px",
+// });
 
 /*=============== Audio ===============*/
-document.getElementById('play-audio').addEventListener("click", () => {
+
+function playMusic() {
   document.getElementById('musicplayer').muted = false; 
   document.getElementById('play-audio').style = "display: none";
   document.getElementById('mute-audio').style = "";
-});
+}
 
-document.getElementById('mute-audio').addEventListener("click", () => {
+function muteMusic() {
   document.getElementById('musicplayer').muted = true; 
   document.getElementById('play-audio').style = "";
   document.getElementById('mute-audio').style = "display: none";
-});
+}
+
+
+function hideElementsWithClass(className) {
+  var elements = document.getElementsByClassName(className);
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].style.display = "none";
+  }
+}
+function showElementsWithClass(className) {
+  var elements = document.getElementsByClassName(className);
+  for (var i = 0; i < elements.length; i++) {
+      elements[i].style.display = "block";
+  }
+}
+function showEnglishText() {
+  hideElementsWithClass('hn');
+  showElementsWithClass('en');
+}
+
+function showHindiText() {
+  hideElementsWithClass('en');
+  showElementsWithClass('hn');
+}
 
