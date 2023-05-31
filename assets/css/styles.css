@@ -209,7 +209,7 @@ body.light-theme {
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 3.5rem 0 1rem;
 }
 
 .section__title,
@@ -369,6 +369,18 @@ body.light-theme {
   /* margin-bottom: 3rem; */
 }
 
+.home__mandap {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url(../img/mandap.png);
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  z-index: -1;
+}
+
 .home__gif {
   width: 400px; 
   height: 100%;
@@ -378,8 +390,8 @@ body.light-theme {
   background-repeat: no-repeat;
   background-size: auto;
   left: 50%;
-    top: 50%;
-    transform: translate(-50%,-20%);
+  top: 45%;
+  transform: translate(-50%,-20%);
 }
 
 .home__handle {
@@ -388,7 +400,7 @@ body.light-theme {
   height: 293px;
   background: linear-gradient(
     180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 0.5),
+    hsla(var(--first-hue), var(--sat), var(--lig), 0.8),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.1)
   );
 
@@ -440,6 +452,10 @@ body.light-theme {
   height: 1px;
   background-color: var(--first-color);
   transform: rotate(90deg) translate(16px, 4px);
+}
+
+.home__social-link-icon {
+  font-size: smaller;
 }
 
 .home__scroll {
@@ -1188,7 +1204,7 @@ body.light-theme {
 /* For large devices */
 @media screen and (min-width: 992px) {
   .home__img {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   .container {
     margin-left: auto;
