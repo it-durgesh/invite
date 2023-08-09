@@ -749,6 +749,13 @@ body.light-theme {
 
 /*=============== WORK ===============*/
 
+.dress-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
 .work__container {
   padding-top: 1rem;
 }
@@ -961,6 +968,7 @@ body.light-theme {
 
 .footer__container {
   padding: 2rem 0 6rem;
+  background: url("../img/bottom-left-1.svg") left bottom no-repeat, url("../img/bottom-right-1.svg") right bottom no-repeat;
 }
 
 .footer__title,
@@ -1035,6 +1043,10 @@ body.light-theme {
 
   .home__button {
     flex-direction: column;
+  }
+
+  .home__scroll {
+    right: -15%;
   }
 
   .home__handle {
